@@ -41,11 +41,11 @@ Rachel built Datababy on this principle: collective observation beats self-perce
   return (
     <PageLayout>
       <div className="min-h-screen px-4 py-12 md:px-8">
-        <div className="mx-auto" style={{ maxWidth: '1050px', width: '100%' }}>
-          <div className="mb-16" style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+        <div className="mx-auto" style={{ maxWidth: '900px', width: '100%' }}>
+          <div className="mb-12" style={{
+            background: 'rgba(255, 255, 255, 0.08)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '20px',
             padding: '32px'
           }}>
@@ -66,12 +66,12 @@ Rachel built Datababy on this principle: collective observation beats self-perce
             <article
               key={index}
               style={{
-                background: 'rgba(255, 255, 255, 0.06)',
+                background: 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: 'blur(24px)',
-                border: '1px solid rgba(255, 255, 255, 0.12)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
                 borderRadius: '20px',
                 padding: '32px',
-                marginBottom: '64px',
+                marginBottom: '48px',
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
               }}
             >
@@ -120,14 +120,14 @@ Rachel built Datababy on this principle: collective observation beats self-perce
             COMING UP
           </h2>
           
-          <div className="space-y-6">
+          <div className="space-y-4">
             {upcomingPosts.map((post, index) => (
               <article
                 key={index}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.03)',
+                  background: 'rgba(255, 255, 255, 0.06)',
                   backdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  border: '1px solid rgba(255, 255, 255, 0.12)',
                   borderRadius: '16px',
                   padding: '20px'
                 }}

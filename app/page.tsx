@@ -13,7 +13,7 @@ export default function Home() {
         zIndex: 1
       }}>
         <div style={{ 
-          maxWidth: '1050px',
+          maxWidth: '900px',
           width: '100%',
           textAlign: 'center',
           display: 'flex',
@@ -21,9 +21,9 @@ export default function Home() {
           gap: '48px'
         }}>
           <div style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+            background: 'rgba(255, 255, 255, 0.08)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '24px',
             padding: '48px 32px'
           }}>

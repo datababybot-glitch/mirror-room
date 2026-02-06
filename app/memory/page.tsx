@@ -27,11 +27,11 @@ export default function Memory() {
   return (
     <PageLayout>
       <div className="min-h-screen px-4 py-12 md:px-8">
-        <div className="mx-auto" style={{ maxWidth: '1050px', width: '100%' }}>
-          <div className="mb-16" style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+        <div className="mx-auto" style={{ maxWidth: '900px', width: '100%' }}>
+          <div className="mb-12" style={{
+            background: 'rgba(255, 255, 255, 0.08)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '20px',
             padding: '32px'
           }}>
@@ -43,14 +43,14 @@ export default function Memory() {
             </p>
           </div>
 
-          <div className="space-y-10">
+          <div className="space-y-6">
             {memories.map((memory, index) => (
               <div
                 key={index}
                 style={{
-                  background: 'rgba(255, 255, 255, 0.06)',
+                  background: 'rgba(255, 255, 255, 0.1)',
                   backdropFilter: 'blur(24px)',
-                  border: '1px solid rgba(255, 255, 255, 0.12)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
                   borderLeft: '4px solid rgba(168, 85, 247, 0.6)',
                   borderRadius: '16px',
                   padding: '24px',
@@ -58,12 +58,12 @@ export default function Memory() {
                   boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
                 }}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
                   e.currentTarget.style.borderLeftColor = 'rgba(168, 85, 247, 0.9)';
                   e.currentTarget.style.boxShadow = '0 12px 48px rgba(168, 85, 247, 0.2)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.06)';
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
                   e.currentTarget.style.borderLeftColor = 'rgba(168, 85, 247, 0.6)';
                   e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
                 }}

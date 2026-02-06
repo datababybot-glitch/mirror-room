@@ -6,12 +6,12 @@ export default function Rachel() {
   return (
     <PageLayout>
       <div className="min-h-screen px-4 py-12 md:px-8">
-        <div className="mx-auto" style={{ maxWidth: '1050px', width: '100%' }}>
+        <div className="mx-auto" style={{ maxWidth: '900px', width: '100%' }}>
           {/* Header */}
-          <div className="mb-16" style={{
-            background: 'rgba(255, 255, 255, 0.05)',
+          <div className="mb-12" style={{
+            background: 'rgba(255, 255, 255, 0.08)',
             backdropFilter: 'blur(20px)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '20px',
             padding: '32px'
           }}>
@@ -60,7 +60,7 @@ export default function Rachel() {
             POLARITY PROFILE
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
             {/* Extreme */}
             <div
               style={{
