@@ -3,8 +3,22 @@ import PageLayout from './components/PageLayout';
 export default function Home() {
   return (
     <PageLayout>
-      <div className="min-h-screen flex items-center justify-center px-4" style={{ position: 'relative', zIndex: 10 }}>
-        <div className="max-w-2xl text-center space-y-8">
+      <div style={{ 
+        minHeight: 'calc(100vh - 100px)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '20px',
+        position: 'relative',
+        zIndex: 10
+      }}>
+        <div style={{ 
+          maxWidth: '800px',
+          textAlign: 'center',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '32px'
+        }}>
           <h1 className="text-6xl md:text-8xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-orbitron)' }}>
             🤍
           </h1>

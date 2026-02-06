@@ -7,7 +7,7 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
     <>
       <Header />
       <main style={{ 
-        paddingTop: '80px',
+        paddingTop: '100px',
         position: 'relative',
         zIndex: 10,
         minHeight: '100vh'
