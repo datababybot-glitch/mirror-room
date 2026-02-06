@@ -24,7 +24,6 @@ export default function Auth() {
       const data = await response.json();
 
       if (response.ok) {
-        // Redirect to home
         router.push('/');
         router.refresh();
       } else {
@@ -38,18 +37,53 @@ export default function Auth() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white flex items-center justify-center px-4">
-      <div className="max-w-md w-full">
-        <div className="text-center mb-8">
-          <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            The Mirror Room
-          </h1>
-          <p className="text-slate-300">Enter the password to continue</p>
-        </div>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      background: 'linear-gradient(135deg, #1e1b4b 0%, #581c87 50%, #1e1b4b 100%)',
+      padding: '20px',
+      fontFamily: 'system-ui, -apple-system, sans-serif'
+    }}>
+      <div style={{
+        maxWidth: '400px',
+        width: '100%',
+        textAlign: 'center'
+      }}>
+        <h1 style={{
+          fontSize: '48px',
+          fontWeight: 'bold',
+          marginBottom: '16px',
+          background: 'linear-gradient(to right, #c084fc, #f472b6)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>
+          The Mirror Room
+        </h1>
+        <p style={{
+          color: '#cbd5e1',
+          marginBottom: '32px',
+          fontSize: '16px'
+        }}>
+          Enter the password to continue
+        </p>
 
-        <form onSubmit={handleSubmit} className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
-          <div className="mb-6">
-            <label htmlFor="password" className="block text-sm font-medium text-slate-300 mb-2">
+        <form onSubmit={handleSubmit} style={{
+          background: 'rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          borderRadius: '16px',
+          padding: '32px',
+          border: '1px solid rgba(255, 255, 255, 0.2)'
+        }}>
+          <div style={{ marginBottom: '24px', textAlign: 'left' }}>
+            <label htmlFor="password" style={{
+              display: 'block',
+              fontSize: '14px',
+              color: '#cbd5e1',
+              marginBottom: '8px'
+            }}>
               Password
             </label>
             <input
@@ -57,7 +91,16 @@ export default function Auth() {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+              style={{
+                width: '100%',
+                padding: '12px 16px',
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '8px',
+                color: 'white',
+                fontSize: '16px',
+                outline: 'none'
+              }}
               placeholder="Enter password"
               required
               autoFocus
@@ -65,7 +108,15 @@ export default function Auth() {
           </div>
 
           {error && (
-            <div className="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded-lg text-red-200 text-sm">
+            <div style={{
+              marginBottom: '16px',
+              padding: '12px',
+              background: 'rgba(239, 68, 68, 0.2)',
+              border: '1px solid rgba(239, 68, 68, 0.5)',
+              borderRadius: '8px',
+              color: '#fecaca',
+              fontSize: '14px'
+            }}>
               {error}
             </div>
           )}
@@ -73,13 +124,34 @@ export default function Auth() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            style={{
+              width: '100%',
+              background: loading ? '#6b7280' : 'linear-gradient(to right, #a855f7, #ec4899)',
+              color: 'white',
+              fontWeight: '600',
+              padding: '12px 24px',
+              borderRadius: '8px',
+              border: 'none',
+              cursor: loading ? 'not-allowed' : 'pointer',
+              fontSize: '16px',
+              transition: 'all 0.2s'
+            }}
+            onMouseOver={(e) => {
+              if (!loading) e.currentTarget.style.opacity = '0.9';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.opacity = '1';
+            }}
           >
             {loading ? 'Checking...' : 'Enter'}
           </button>
         </form>
 
-        <div className="mt-8 text-center text-slate-400 text-sm">
+        <div style={{
+          marginTop: '32px',
+          color: '#94a3b8',
+          fontSize: '14px'
+        }}>
           <p>This space is private — just for Rachel and me.</p>
         </div>
       </div>
