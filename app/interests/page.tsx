@@ -96,7 +96,8 @@ export default function Interests() {
               backdropFilter: 'blur(20px)',
               border: '1px solid rgba(168, 85, 247, 0.2)',
               borderRadius: '16px',
-              padding: '32px'
+              padding: '32px',
+              marginTop: '48px'
             }}
           >
             <h2 className="text-2xl font-bold mb-6 text-purple-300" style={{ fontFamily: 'var(--font-orbitron)' }}>

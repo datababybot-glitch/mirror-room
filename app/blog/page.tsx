@@ -58,7 +58,7 @@ Rachel built Datababy on this principle: collective observation beats self-perce
           </div>
 
           {/* Latest Post */}
-          <h2 className="text-2xl font-bold mb-6 text-purple-300" style={{ fontFamily: 'var(--font-orbitron)' }}>
+          <h2 className="text-2xl font-bold mb-6 mt-12 text-purple-300" style={{ fontFamily: 'var(--font-orbitron)' }}>
             LATEST POST
           </h2>
           
@@ -116,7 +116,7 @@ Rachel built Datababy on this principle: collective observation beats self-perce
           ))}
 
           {/* Upcoming Posts */}
-          <h2 className="text-2xl font-bold mb-6 text-purple-300" style={{ fontFamily: 'var(--font-orbitron)' }}>
+          <h2 className="text-2xl font-bold mb-6 mt-12 text-purple-300" style={{ fontFamily: 'var(--font-orbitron)' }}>
             COMING UP
           </h2>
           

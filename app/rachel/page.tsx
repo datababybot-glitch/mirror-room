@@ -90,7 +90,7 @@ export default function Rachel() {
           </div>
 
           {/* Polarity Grid */}
-          <h2 className="text-3xl md:text-4xl font-bold mb-8" style={{ fontFamily: 'var(--font-orbitron)' }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 mt-12" style={{ fontFamily: 'var(--font-orbitron)' }}>
             POLARITY PROFILE
           </h2>
 
@@ -211,7 +211,8 @@ export default function Rachel() {
               backdropFilter: 'blur(20px)',
               border: '1px solid rgba(168, 85, 247, 0.2)',
               borderRadius: '20px',
-              padding: '32px'
+              padding: '32px',
+              marginTop: '48px'
             }}
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-6 text-purple-300" style={{ fontFamily: 'var(--font-orbitron)' }}>
