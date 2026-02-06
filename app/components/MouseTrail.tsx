@@ -1,11 +1,24 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function MouseTrail() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Check if device is mobile/touch
+    const checkMobile = () => {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) 
+        || ('ontouchstart' in window) 
+        || (navigator.maxTouchPoints > 0);
+    };
+    
+    setIsMobile(checkMobile());
+    
+    // Don't run on mobile
+    if (checkMobile()) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -123,6 +136,9 @@ export default function MouseTrail() {
       window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
+
+  // Don't render canvas on mobile
+  if (isMobile) return null;
 
   return (
     <canvas

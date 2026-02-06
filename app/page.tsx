@@ -3,7 +3,7 @@ import PageLayout from './components/PageLayout';
 export default function Home() {
   return (
     <PageLayout>
-      <div className="min-h-screen flex items-center justify-center px-4">
+      <div className="min-h-screen flex items-center justify-center px-4" style={{ position: 'relative', zIndex: 10 }}>
         <div className="max-w-2xl text-center space-y-8">
           <h1 className="text-6xl md:text-8xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-orbitron)' }}>
             🤍
