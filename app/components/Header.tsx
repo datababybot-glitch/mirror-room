@@ -9,9 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const links = [
-    { href: '/', label: 'Home' },
     { href: '/rachel', label: 'Rachel' },
-    { href: '/habits', label: 'Habits' },
     { href: '/blog', label: 'Blog' },
     { href: '/interests', label: 'Interests' },
     { href: '/memory', label: 'Memory' },

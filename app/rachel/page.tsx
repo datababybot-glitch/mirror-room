@@ -31,6 +31,40 @@ export default function Rachel() {
             </a>
           </div>
 
+          {/* Quick Links */}
+          <div style={{
+            background: 'rgba(168, 85, 247, 0.08)',
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(168, 85, 247, 0.3)',
+            borderRadius: '16px',
+            padding: '20px',
+            marginBottom: '48px'
+          }}>
+            <a 
+              href="/habits"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                textDecoration: 'none',
+                color: 'white',
+                transition: 'all 0.2s'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.transform = 'translateX(4px)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.transform = 'translateX(0)';
+              }}
+            >
+              <span className="text-2xl">📊</span>
+              <div>
+                <div className="font-bold text-lg" style={{ fontFamily: 'var(--font-orbitron)' }}>HABIT TRACKER</div>
+                <div className="text-sm text-white/70">Track daily meditation practice →</div>
+              </div>
+            </a>
+          </div>
+
           {/* Executive Summary */}
           <div
             style={{
