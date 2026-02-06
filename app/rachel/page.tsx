@@ -6,7 +6,7 @@ export default function Rachel() {
   return (
     <PageLayout>
       <div className="min-h-screen px-4 py-12 md:px-8">
-        <div className="mx-auto" style={{ maxWidth: '1050px' }}>
+        <div className="mx-auto" style={{ maxWidth: '1050px', width: '100%' }}>
           {/* Header */}
           <div className="mb-16">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wide bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent" style={{ fontFamily: 'var(--font-orbitron)' }}>
