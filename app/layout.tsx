@@ -30,10 +30,7 @@ export default function RootLayout({
         className={`${orbitron.variable} ${spaceGrotesk.variable} antialiased bg-black text-white`}
         style={{ fontFamily: 'var(--font-space-grotesk)' }}
       >
-        <Header />
-        <main className="pt-20">
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   );

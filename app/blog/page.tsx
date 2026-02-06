@@ -1,6 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 export default function Blog() {
   return (
-    <div className="min-h-screen px-4 py-12 md:px-8">
+    <PageLayout>
+      <div className="min-h-screen px-4 py-12 md:px-8">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wide" style={{ fontFamily: 'var(--font-orbitron)' }}>
           BLOG
@@ -20,5 +23,6 @@ export default function Blog() {
         </div>
       </div>
     </div>
+    </PageLayout>
   );
 }

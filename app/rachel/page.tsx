@@ -1,6 +1,9 @@
+import PageLayout from '../components/PageLayout';
+
 export default function Rachel() {
   return (
-    <div className="min-h-screen px-4 py-12 md:px-8">
+    <PageLayout>
+      <div className="min-h-screen px-4 py-12 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wide" style={{ fontFamily: 'var(--font-orbitron)' }}>
           RACHEL BALKE
@@ -156,5 +159,6 @@ export default function Rachel() {
         </div>
       </div>
     </div>
+    </PageLayout>
   );
 }
