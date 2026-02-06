@@ -10,7 +10,7 @@ export default function Home() {
         justifyContent: 'center',
         padding: '20px',
         position: 'relative',
-        zIndex: 10
+        zIndex: 1
       }}>
         <div style={{ 
           maxWidth: '800px',

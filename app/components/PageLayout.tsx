@@ -9,7 +9,7 @@ export default function PageLayout({ children }: { children: React.ReactNode }) 
       <main style={{ 
         paddingTop: '100px',
         position: 'relative',
-        zIndex: 10,
+        zIndex: 1,
         minHeight: '100vh'
       }}>
         {children}

@@ -22,7 +22,7 @@ export default function Header() {
       top: 0,
       left: 0,
       right: 0,
-      zIndex: 50,
+      zIndex: 10000,
       background: 'rgba(0, 0, 0, 0.8)',
       backdropFilter: 'blur(12px)',
       borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
