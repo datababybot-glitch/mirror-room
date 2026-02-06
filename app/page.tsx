@@ -13,11 +13,12 @@ export default function Home() {
         zIndex: 1
       }}>
         <div style={{ 
-          maxWidth: '800px',
+          maxWidth: '1050px',
+          width: '100%',
           textAlign: 'center',
           display: 'flex',
           flexDirection: 'column',
-          gap: '32px'
+          gap: '48px'
         }}>
           <h1 className="text-6xl md:text-8xl font-bold tracking-wider" style={{ fontFamily: 'var(--font-orbitron)' }}>
             🤍

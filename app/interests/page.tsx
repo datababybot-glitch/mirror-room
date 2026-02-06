@@ -33,8 +33,8 @@ export default function Interests() {
   return (
     <PageLayout>
       <div className="min-h-screen px-4 py-12 md:px-8 relative">
-        <div className="max-w-5xl mx-auto">
-          <div className="mb-12">
+        <div className="mx-auto" style={{ maxWidth: '1050px' }}>
+          <div className="mb-16">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-wide bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent" style={{ fontFamily: 'var(--font-orbitron)' }}>
               INTERESTS
             </h1>
@@ -43,7 +43,7 @@ export default function Interests() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
             {coreInterests.map((interest, index) => (
               <div
                 key={index}
