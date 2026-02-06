@@ -97,7 +97,13 @@ export default function Habits() {
     <PageLayout>
       <div className="min-h-screen px-4 py-12 md:px-8">
         <div className="mx-auto" style={{ maxWidth: '1050px', width: '100%' }}>
-          <div className="mb-16">
+          <div className="mb-16" style={{
+            background: 'rgba(255, 255, 255, 0.05)',
+            backdropFilter: 'blur(20px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            borderRadius: '20px',
+            padding: '32px'
+          }}>
             <h1 
               className="text-4xl md:text-6xl font-bold mb-4 tracking-wide bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent" 
               style={{ fontFamily: 'var(--font-orbitron)' }}
@@ -112,11 +118,12 @@ export default function Habits() {
           {/* Meditation Tracker */}
           <div
             style={{
-              background: 'rgba(255, 255, 255, 0.03)',
-              backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.08)',
+              background: 'rgba(255, 255, 255, 0.06)',
+              backdropFilter: 'blur(24px)',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
               borderRadius: '20px',
-              padding: '32px'
+              padding: '32px',
+              boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
             }}
           >
             <h2 className="text-2xl font-bold mb-6 text-white" style={{ fontFamily: 'var(--font-orbitron)' }}>
