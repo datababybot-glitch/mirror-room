@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Orbitron, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
-import MouseTrail from "./components/MouseTrail";
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
@@ -31,7 +30,6 @@ export default function RootLayout({
         className={`${orbitron.variable} ${spaceGrotesk.variable} antialiased bg-black text-white`}
         style={{ fontFamily: 'var(--font-space-grotesk)' }}
       >
-        <MouseTrail />
         {children}
       </body>
     </html>
